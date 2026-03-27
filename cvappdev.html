@@ -14,7 +14,8 @@
         <!-- Profile Section -->
         <section class="profile">
             <div class="profile-image">
-                <img src="profile.jpg" alt="Profile Photo" loading="lazy">
+                <img src="profile.jpg" alt="Profile Photo" loading="lazy" onerror="this.style.display='none'; document.querySelector('.profile-placeholder').style.display='flex';">
+                <div class="profile-placeholder" style="display:none;">Profile<br>Photo</div>
             </div>
             <h1>Rafnwel Nazh Sienes</h1>
             <p class="subtitle">IT Student & Developer</p>
